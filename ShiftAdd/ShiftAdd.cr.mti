@@ -1,0 +1,20 @@
+F:/modelsim/ShiftAdd/ShiftAdd_test.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:\modelsim\ShiftAdd\ShiftAdd_test.vhd}
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tb_ShiftAdd
+-- Compiling architecture Behavioral of tb_ShiftAdd
+
+} {} {}} F:/modelsim/ShiftAdd/ShiftAdd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:\modelsim\ShiftAdd\ShiftAdd.vhd}
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ShiftAdd
+-- Compiling architecture Behavioral of ShiftAdd
+
+} {} {}}

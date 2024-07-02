@@ -1,0 +1,50 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity ShiftAdd is
+    Port ( 
+        R : in STD_LOGIC_VECTOR (8 downto 0); -- 9-bit input
+        SIGN : in STD_LOGIC; -- 1-bit sign flag
+        CLK : in STD_LOGIC; -- Clock signal
+        RST1 : in STD_LOGIC; -- Reset signal for the first DFF
+        RST2 : in STD_LOGIC; -- Reset signal for the second DFF
+        Z : out STD_LOGIC_VECTOR (15 downto 0) -- 16-bit output
+    );
+end ShiftAdd;
+
+architecture Behavioral of ShiftAdd is
+    signal R_ext : STD_LOGIC_VECTOR (15 downto 0); -- 16-bit extended R
+    signal D_left, D_right : STD_LOGIC_VECTOR (15 downto 0); -- Accumulator registers
+begin
+
+    -- Extend R to 16 bits by padding zeros
+    R_ext <= "0000000" & R; -- ?R???16?????9?0
+
+    process(CLK, RST1)
+    begin
+        if RST1 = '1' then
+            Acc1 <= (others => '0');
+        elsif rising_edge(CLK) then
+            Acc1 <= Acc1 + R_ext;
+        end if;
+    end process;
+
+    process(CLK, RST2)
+    begin
+        if RST2 = '1' then
+            Acc2 <= (others => '0');
+        elsif rising_edge(CLK) then
+            if SIGN = '1' then
+                Acc2 <= Acc1 + Acc2;
+            else
+                Acc2 <= Acc1 - Acc2;
+            end if;
+        end if;
+    end process;
+
+    Z <= Acc2;
+
+end Behavioral;
+

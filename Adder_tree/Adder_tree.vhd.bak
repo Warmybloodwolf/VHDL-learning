@@ -1,0 +1,65 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity adder_tree is
+    Port (
+        clk : in  STD_LOGIC;
+        AB  : in  STD_LOGIC_VECTOR (255 downto 0);
+        R   : out STD_LOGIC_VECTOR (8 downto 0)
+    );
+end adder_tree;
+
+architecture Behavioral of adder_tree is
+    signal partial_sum : std_logic_vector(255 downto 0);
+    signal sum_stage1  : std_logic_vector(127 downto 0);
+    signal sum_stage2  : std_logic_vector(63 downto 0);
+    signal sum_stage3  : std_logic_vector(31 downto 0);
+    signal sum_stage4  : std_logic_vector(15 downto 0);
+    signal sum_stage5  : std_logic_vector(7 downto 0);
+    signal final_sum   : std_logic_vector(8 downto 0);
+begin
+    process(clk)
+        variable temp_sum : unsigned(8 downto 0) := (others => '0');
+    begin
+        if rising_edge(clk) then
+            -- Stage 0: Convert each 2-bit pair to unsigned and store in partial_sum
+            for i in 0 to 127 loop
+                partial_sum(i*2+1 downto i*2) <= std_logic_vector(unsigned(i, 2));
+            end loop;
+
+            -- Stage 1: Add pairs of partial_sum
+            for i in 0 to 63 loop
+                sum_stage1(i*2+1 downto i*2) <= std_logic_vector(unsigned(partial_sum(i*4+3 downto i*4)) + unsigned(partial_sum(i*4+1 downto i*4)));
+            end loop;
+
+            -- Stage 2: Add pairs of sum_stage1
+            for i in 0 to 31 loop
+                sum_stage2(i*2+1 downto i*2) <= std_logic_vector(unsigned(sum_stage1(i*4+3 downto i*4)) + unsigned(sum_stage1(i*4+1 downto i*4)));
+            end loop;
+
+            -- Stage 3: Add pairs of sum_stage2
+            for i in 0 to 15 loop
+                sum_stage3(i*2+1 downto i*2) <= std_logic_vector(unsigned(sum_stage2(i*4+3 downto i*4)) + unsigned(sum_stage2(i*4+1 downto i*4)));
+            end loop;
+
+            -- Stage 4: Add pairs of sum_stage3
+            for i in 0 to 7 loop
+                sum_stage4(i*2+1 downto i*2) <= std_logic_vector(unsigned(sum_stage3(i*4+3 downto i*4)) + unsigned(sum_stage3(i*4+1 downto i*4)));
+            end loop;
+
+            -- Stage 5: Add pairs of sum_stage4
+            for i in 0 to 3 loop
+                sum_stage5(i*2+1 downto i*2) <= std_logic_vector(unsigned(sum_stage4(i*4+3 downto i*4)) + unsigned(sum_stage4(i*4+1 downto i*4)));
+            end loop;
+
+            -- Final stage: Add the last two sums
+            final_sum <= std_logic_vector(unsigned(sum_stage5(7 downto 4)) + unsigned(sum_stage5(3 downto 0)));
+
+            -- Output the final sum
+            R <= final_sum;
+        end if;
+    end process;
+end Behavioral;
+

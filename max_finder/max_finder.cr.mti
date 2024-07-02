@@ -1,0 +1,39 @@
+F:/modelsim/max_finder/max_finder_test.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/max_finder/max_finder_test.vhd
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity tb_max_finder
+-- Compiling architecture Behavioral of tb_max_finder
+
+} {} {}} F:/modelsim/max_finder/max_finder.vhd {0 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/max_finder/max_finder.vhd
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity max_finder
+-- Compiling architecture Behavioral of max_finder
+** Error: F:/modelsim/max_finder/max_finder.vhd(22): (vcom-1078) Identifier "unsigned" is not directly visible.
+
+   Potentially visible declarations are:
+        ieee.NUMERIC_STD.UNSIGNED (subtype declaration)
+        ieee.std_logic_arith.UNSIGNED (type declaration)
+
+** Error: F:/modelsim/max_finder/max_finder.vhd(24): No feasible entries for infix operator "/=".
+** Error: F:/modelsim/max_finder/max_finder.vhd(24): Type error resolving infix expression "/=" as type std.STANDARD.BOOLEAN.
+** Error: F:/modelsim/max_finder/max_finder.vhd(41): No feasible entries for infix operator ">=".
+** Error: F:/modelsim/max_finder/max_finder.vhd(41): Type error resolving infix expression ">=" as type std.STANDARD.BOOLEAN.
+** Error: F:/modelsim/max_finder/max_finder.vhd(53): No feasible entries for infix operator "=".
+** Error: F:/modelsim/max_finder/max_finder.vhd(53): Type error resolving infix expression "=" as type std.STANDARD.BOOLEAN.
+** Error: F:/modelsim/max_finder/max_finder.vhd(65): No feasible entries for infix operator ">".
+** Error: F:/modelsim/max_finder/max_finder.vhd(65): Type error resolving infix expression ">" as type std.STANDARD.BOOLEAN.
+** Error: F:/modelsim/max_finder/max_finder.vhd(66): No feasible entries for infix operator "-".
+** Error: F:/modelsim/max_finder/max_finder.vhd(66): Type error resolving infix expression "-" as type (error).
+** Error: F:/modelsim/max_finder/max_finder.vhd(70): VHDL Compiler exiting
+
+} {11.0 12.0 17.0 28.0} {}}
