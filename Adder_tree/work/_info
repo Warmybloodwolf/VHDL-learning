@@ -7,90 +7,107 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-dF:/modelsim/max_finder
+Z0 dF:/modelsim/max_finder
+T_opt
+!s110 1720179662
+V?J8e?:ZGZ83V9H5aMeCM82
+04 10 10 work adder_tree behavioral 1
+=1-6c2408cd33f4-6687dbce-9e-3654
+Z1 o-quiet -auto_acc_if_foreign -work work
+n@_opt
+Z2 OL;O;10.4;61
+R0
+T_opt1
+!s110 1720181687
+VIKb0Al9M<?QI9>Di=[ZS22
+04 13 10 work tb_adder_tree behavioral 1
+=1-6c2408cd33f4-6687e3b7-171-37e0
+R1
+n@_opt1
+R2
 Eadder_tree
-Z0 w1719456221
-Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
-Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
-Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z5 dF:/modelsim/Adder_tree
-Z6 8F:/modelsim/Adder_tree/Adder_tree.vhd
-Z7 FF:/modelsim/Adder_tree/Adder_tree.vhd
+Z3 w1720180106
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z6 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z7 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z8 dF:/modelsim/Adder_tree
+Z9 8F:/modelsim/Adder_tree/Adder_tree.vhd
+Z10 FF:/modelsim/Adder_tree/Adder_tree.vhd
 l0
 L6
-VfO>eYIS==^Jb]7ehNdQoI2
-!s100 ^HE_5X=f0@2ZTWYD=d3XJ0
-Z8 OL;C;10.4;61
+VFG7EKHajfQR6IBMBFL[?d0
+!s100 >06IkO>n9kbkViZ4Eh=^H2
+Z11 OL;C;10.4;61
 32
-Z9 !s110 1719456226
+Z12 !s110 1720180763
 !i10b 1
-Z10 !s108 1719456226.586000
-Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|F:/modelsim/Adder_tree/Adder_tree.vhd|
-Z12 !s107 F:/modelsim/Adder_tree/Adder_tree.vhd|
+Z13 !s108 1720180763.915000
+Z14 !s90 -reportprogress|300|-work|work|F:/modelsim/Adder_tree/Adder_tree.vhd|
+Z15 !s107 F:/modelsim/Adder_tree/Adder_tree.vhd|
 !i113 0
-Z13 o-work work -2002 -explicit
-Z14 tExplicit 1
+Z16 o-work work
+Z17 tExplicit 1
 Abehavioral
-R1
-R2
-R3
-R4
-DEx4 work 10 adder_tree 0 22 fO>eYIS==^Jb]7ehNdQoI2
-l16
-L14
-Vg=:>=O2C@AA4L_3_MW@Ah0
-!s100 XkCZ`XeJS0WPF`SF`VAH:2
-R8
-32
-R9
-!i10b 1
-R10
-R11
-R12
-!i113 0
-R13
-R14
-Etb_adder_tree
-Z15 w1719455601
-R1
-R2
-R3
 R4
 R5
-Z16 8F:/modelsim/Adder_tree/Adder_tree_test.vhd
-Z17 FF:/modelsim/Adder_tree/Adder_tree_test.vhd
+R6
+R7
+DEx4 work 10 adder_tree 0 22 FG7EKHajfQR6IBMBFL[?d0
+l15
+L13
+Vhdo@V=MgD`j:7mTz9LH^^3
+!s100 DDO]J_1=8aTnzLTU0gC[?0
+R11
+32
+R12
+!i10b 1
+R13
+R14
+R15
+!i113 0
+R16
+R17
+Etb_adder_tree
+Z18 w1720180480
+R4
+R5
+R6
+R7
+R8
+Z19 8F:/modelsim/Adder_tree/Adder_tree_test.vhd
+Z20 FF:/modelsim/Adder_tree/Adder_tree_test.vhd
 l0
 L6
-V3Pi>bjfMbY:[X0d>QQleg3
+Vn?24ihzj0BE;NXnhA0@mZ2
 !s100 <j[UTeMam<<4:3_Dk70I01
-R8
+R11
 32
-R9
+R12
 !i10b 1
-Z18 !s108 1719456226.631000
-Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|F:/modelsim/Adder_tree/Adder_tree_test.vhd|
-Z20 !s107 F:/modelsim/Adder_tree/Adder_tree_test.vhd|
+Z21 !s108 1720180763.979000
+Z22 !s90 -reportprogress|300|-work|work|F:/modelsim/Adder_tree/Adder_tree_test.vhd|
+Z23 !s107 F:/modelsim/Adder_tree/Adder_tree_test.vhd|
 !i113 0
-R13
-R14
+R16
+R17
 Abehavioral
-R1
-R2
-R3
 R4
-Z21 DEx4 work 13 tb_adder_tree 0 22 3Pi>bjfMbY:[X0d>QQleg3
-l24
+R5
+R6
+R7
+DEx4 work 13 tb_adder_tree 0 22 n?24ihzj0BE;NXnhA0@mZ2
+l20
 L9
-Z22 V251jQZTVH8HD18L>mIDhh1
-Z23 !s100 bDi;E8`LZmANM3=J]J45]3
-R8
+VY5LkIc84ARgD]1e6mGX]81
+!s100 ZzIoO:^C[SfogPWMBa[?C1
+R11
 32
-R9
+R12
 !i10b 1
-R18
-R19
-R20
+R21
+R22
+R23
 !i113 0
-R13
-R14
+R16
+R17

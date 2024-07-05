@@ -1,4 +1,12 @@
-F:/modelsim/matrix_multiplier/matrix_multiplier_test.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/matrix_multiplier_test.vhd
+F:/modelsim/matrix_multiplier/matrix_pkg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/matrix_pkg.vhd
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling package matrix_pkg
+
+} {} {}} F:/modelsim/matrix_multiplier/matrix_multiplier_test.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/matrix_multiplier_test.vhd
 Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -7,33 +15,6 @@ Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package matrix_pkg
 -- Compiling entity matrix_multiplier_tb
 -- Compiling architecture Behavioral of matrix_multiplier_tb
-
-} {} {}} F:/modelsim/matrix_multiplier/matrix_pkg.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/matrix_pkg.vhd
-Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling package matrix_pkg
-
-} {} {}} F:/modelsim/matrix_multiplier/matrix_multiplier.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:\modelsim\matrix_multiplier\matrix_multiplier.vhd}
-Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package matrix_pkg
--- Compiling entity matrix_multiplier
--- Compiling architecture Behavioral of matrix_multiplier
-
-} {} {}} F:/modelsim/matrix_multiplier/shiftadd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/shiftadd.vhd
-Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity shiftAdd
--- Compiling architecture Behavioral of shiftAdd
 
 } {} {}} F:/modelsim/matrix_multiplier/adder_tree.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/adder_tree.vhd
 Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
@@ -44,5 +25,24 @@ Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity adder_tree
 -- Compiling architecture Behavioral of adder_tree
+
+} {} {}} F:/modelsim/matrix_multiplier/shiftadd.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none F:/modelsim/matrix_multiplier/shiftadd.vhd
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity shiftAdd
+-- Compiling architecture Behavioral of shiftAdd
+
+} {} {}} F:/modelsim/matrix_multiplier/matrix_multiplier.vhd {1 {vcom -work work -2002 -explicit -vopt -stats=none {F:\modelsim\matrix_multiplier\matrix_multiplier.vhd}
+Model Technology ModelSim SE-64 vcom 10.4 Compiler 2014.12 Dec  3 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package matrix_pkg
+-- Compiling entity matrix_multiplier
+-- Compiling architecture Behavioral of matrix_multiplier
 
 } {} {}}
